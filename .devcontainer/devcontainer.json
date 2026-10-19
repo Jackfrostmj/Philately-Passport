@@ -1,0 +1,9 @@
+{
+  "name": "Philately Passport Test Site",
+  "image": "mcr.microsoft.com/devcontainers/javascript-node:1-24-bookworm",
+  "forwardPorts": [3000],
+  "portsAttributes": { "3000": { "label": "Philately Passport", "onAutoForward": "openBrowser" } },
+  "postCreateCommand": "npm test",
+  "postStartCommand": "bash .devcontainer/start.sh",
+  "customizations": { "vscode": { "settings": { "remote.autoForwardPorts": true } } }
+}
